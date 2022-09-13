@@ -4,4 +4,4 @@
 Easy to use google OTP
 
 ### Install
-refer to https://jitpack.io/#LeeMH/googletop/0.0.1
+refer to https://jitpack.io/#LeeMH/google-otp/0.0.1
