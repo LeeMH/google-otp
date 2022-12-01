@@ -54,7 +54,7 @@ public class Otp {
     public static String makeQrUrl(String user, String host, String secret, QrSize qrSize) {
         try {
             return String.format(GOOGLE_URL, qrSize.size) + "otpauth://totp/"
-                    + URLEncoder.encode(host + "@" + user, "UTF-8").replace("+", "%20")
+                    + URLEncoder.encode(user + "@" + host, "UTF-8").replace("+", "%20")
                     + "?secret=" + URLEncoder.encode(secret, "UTF-8").replace("+", "%20")
                     + "&issuer=" + URLEncoder.encode(host, "UTF-8").replace("+", "%20");
         } catch (UnsupportedEncodingException e) {
